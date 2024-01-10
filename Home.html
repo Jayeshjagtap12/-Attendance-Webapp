@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-30">
+  <title>JAYESH</title>
+  <link rel="stylesheet" href="./css/Home.css">
+  <style>
+    .button_1 {
+      background-color: orange;
+    }
+
+    .sub {
+      background-color:#ccaaac;
+    }
+
+    form {
+      background-color: white;
+      text-align: center;
+      padding-top: 50px;
+      padding-right: 30px;
+      padding-bottom: 50px;
+      padding-left: 80px;
+    }
+
+    footer {
+      padding: 20px;
+      margin-top: 20px;
+      color: #ffffff;
+      background-color: #e8491d;
+      text-align: center;
+    }
+
+    header {
+      background: #35424a;
+      color: #ffffff;
+      padding-top: 30px;
+      min-height: 70px;
+      border-bottom: #e8491d 3px solid;
+    }
+
+    header a {
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+
+    header li {
+      float: left;
+      display: inline;
+      padding: 0 20px 0 20px;
+    }
+
+    header #branding {
+      float: left;
+    }
+
+    header #branding h1 {
+      margin: 0;
+    }
+
+    header nav {
+      float: right;
+      margin-top: 10px;
+    }
+
+    header .highlight,
+    header .current a {
+      color: #e8491d;
+      font-weight: bold;
+    }
+
+    header a:hover {
+      color: #cccccc;
+      font-weight: bold;
+    }
+  </style>
+
+</head>
+
+<body style="background-color:powde;">
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Student</span> Attendance System</h1>
+      </div>
+      <nav>
+        <ul>
+          <li class="current"><a href="Home.html">Home</a></li>
+          
+          <li><a href="about2.html">about</a></li>
+          <li><a href="login.html">Login</a></li>
+          
+          <li><a href="Statistics.html">Statistics</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <h1 style="color:white">Welcome to attendance system </h1>
+  <div>
+    <form autocomplete="off" method="POST" 
+      action="https://script.google.com/macros/s/AKfycbyfIqVWX3a0ORtpzkEJU2cTAjmU1mDWoZ3vioBN7dvcNTT24A_IY9xG2CzfPyY3ULQ4sA/exec">
+   <div style="text-align:center" bgcolor="red"> 
+         <label for="Name">Prof Name:</label>
+      <input type="text" id="Name" name="Name" placeholder="Rahul Mandlik"required>
+      <br>
+      <br>
+      <label for="Sub">Sub:</label>
+      <input type="text" id="sub" name="sub" placeholder="Microprccesor"required>
+      <br>
+      <br>
+      <label for="Date">Date:</label>
+      <input type="date" id="Date" name="Date" placeholder="dd/mm/yyyy" required>
+<br>
+<br>
+<label for="Time">Time:</label>
+       <label for="Tim">From</label>
+      <input type="time" id="Tim" name="From" placeholder="From" required>
+      <label for="Ti">To</label>
+      <input type="time" id="Ti" name="To" placeholder="To" required>
+      </div>
+      <h2 style="text-align:center">Click on student roll no who are present</h2>
+      
+    
+
+        
+  <button type="button" id="bt_1" value="Absent" class="button_1"
+        onclick="handleClick('bt_1')">01
+        <input type="checkbox" name="st_1" value="present">
+      </button>     
+
+        <button type="button" id="bt_2" value="Absent" class="button_1"
+        onclick="handleClick('bt_2')">02
+        <input type="checkbox" name="st_2" value="present">
+      </button>
+      
+       <button type="button" id="bt_3" value="Absent" class="button_1"
+        onclick="handleClick('bt_3')">03
+        <input type="checkbox" name="st_3" value="present">
+      </button>
+      
+       <button type="button" id="bt_4" value="Absent" class="button_1"
+        onclick="handleClick('bt_4')">04
+        <input type="checkbox" name="st_4" value="present">
+      </button>
+      
+      <button type="button" id="bt_5" value="Absent" class="button_1"
+        onclick="handleClick('bt_5')">05
+        <input type="checkbox" name="st_5" value="present">
+      </button>
+      
+       <button type="button" id="bt_6" value="Absent" class="button_1"
+        onclick="handleClick('bt_6')">06
+        <input type="checkbox" name="st_6" value="present">
+      </button>
+      
+       <button type="button" id="bt_7" value="Absent" class="button_1"
+        onclick="handleClick('bt_7')">07
+        <input type="checkbox" name="st_7" value="present">
+      </button>
+      
+      <button type="button" id="bt_8" value="Absent" class="button_1"
+        onclick="handleClick('bt_8')">08
+        <input type="checkbox" name="st_8" value="present">
+      </button>
+      
+      <button type="button" id="bt_9" value="Absent" class="button_1"
+        onclick="handleClick('bt_9')">09
+        <input type="checkbox" name="st_9" value="present">
+      </button>
+      
+       <button type="button" id="bt_10" value="Absent" class="button_1"
+        onclick="handleClick('bt_10')">10
+        <input type="checkbox" name="st_10" value="present">
+      </button>
+      
+      <br>
+      <br>
+       <button type="button" id="bt_11" value="Absent" class="button_1"
+        onclick="handleClick('bt_11')">11
+        <input type="checkbox" name="st_11" value="present">
+      </button>
+      
+       <button type="button" id="bt_12" value="Absent" class="button_1"
+        onclick="handleClick('bt_12')">12
+        <input type="checkbox" name="st_12" value="present">
+      </button>
+      
+       <button type="button" id="bt_13" value="Absent" class="button_1"
+        onclick="handleClick('bt_13')">13
+        <input type="checkbox" name="st_13" value="present">
+      </button>
+      
+      <button type="button" id="bt_14" value="Absent" class="button_1"
+        onclick="handleClick('bt_14')">14
+        <input type="checkbox" name="st_14" value="present">
+      </button>
+      
+      <button type="button" id="bt_15" value="Absent" class="button_1"
+        onclick="handleClick('bt_15')">15
+        <input type="checkbox" name="st_15" value="present">
+      </button>
+      
+      <button type="button" id="bt_16" value="Absent" class="button_1"
+        onclick="handleClick('bt_16')">16
+        <input type="checkbox" name="st_16" value="present">
+      </button>
+      
+      <button type="button" id="bt_17" value="Absent" class="button_1"
+        onclick="handleClick('bt_17')">17
+        <input type="checkbox" name="st_17" value="present">
+      </button>
+      
+      <button type="button" id="bt_18" value="Absent" class="button_1"
+        onclick="handleClick('bt_18')">18
+        <input type="checkbox" name="st_18" value="present">
+      </button>
+      
+       <button type="button" id="bt_19" value="Absent" class="button_1"
+        onclick="handleClick('bt_19')">19
+        <input type="checkbox" name="st_19" value="present">
+      </button>
+      
+       <button type="button" id="bt_20" value="Absent" class="button_1"
+        onclick="handleClick('bt_20')">20
+        <input type="checkbox" name="st_20" value="present">
+      </button>
+      
+      <br>
+      <br>
+       <button type="button" id="bt_21" value="Absent" class="button_1"
+        onclick="handleClick('bt_21')">21
+        <input type="checkbox" name="st_21" value="present">
+      </button>
+      
+       <button type="button" id="bt_22" value="Absent" class="button_1"
+        onclick="handleClick('bt_22')">22
+        <input type="checkbox" name="st_22" value="present">
+      </button>
+      
+       <button type="button" id="bt_23" value="Absent" class="button_1"
+        onclick="handleClick('bt_23')">23
+        <input type="checkbox" name="st_23" value="present">
+      </button>
+      
+      <button type="button" id="bt_24" value="Absent" class="button_1"
+        onclick="handleClick('bt_24')">24
+        <input type="checkbox" name="st_24" value="present">
+      </button>
+      
+      <button type="button" id="bt_25" value="Absent" class="button_1"
+        onclick="handleClick('bt_25')">25
+        <input type="checkbox" name="st_25" value="present">
+      </button>
+      
+      <button type="button" id="bt_26" value="Absent" class="button_1"
+        onclick="handleClick('bt_26')">26
+        <input type="checkbox" name="st_26" value="present">
+      </button>
+      
+      <button type="button" id="bt_27" value="Absent" class="button_1"
+        onclick="handleClick('bt_27')">27
+        <input type="checkbox" name="st_27" value="present">
+      </button>
+      
+      <button type="button" id="bt_28" value="Absent" class="button_1"
+        onclick="handleClick('bt_28')">28
+        <input type="checkbox" name="st_28" value="present">
+      </button>
+      
+       <button type="button" id="bt_29" value="Absent" class="button_1"
+        onclick="handleClick('bt_29')">29
+        <input type="checkbox" name="st_29" value="present">
+      </button>
+      
+       <button type="button" id="bt_30" value="Absent" class="button_1"
+        onclick="handleClick('bt_30')">30
+        <input type="checkbox" name="st_30" value="present">
+      </button>
+      
+     <br>
+      <br>
+       <button type="button" id="bt_31" value="Absent" class="button_1"
+        onclick="handleClick('bt_31')">31
+        <input type="checkbox" name="st_31" value="present">
+      </button>
+      
+       <button type="button" id="bt_32" value="Absent" class="button_1"
+        onclick="handleClick('bt_32')">32
+        <input type="checkbox" name="st_32" value="present">
+      </button>
+      
+       <button type="button" id="bt_33" value="Absent" class="button_1"
+        onclick="handleClick('bt_33')">33
+        <input type="checkbox" name="st_33" value="present">
+      </button>
+      
+      <button type="button" id="bt_34" value="Absent" class="button_1"
+        onclick="handleClick('bt_34')">34
+        <input type="checkbox" name="st_34" value="present">
+      </button>
+      
+      <button type="button" id="bt_35" value="Absent" class="button_1"
+        onclick="handleClick('bt_35')">35
+        <input type="checkbox" name="st_35" value="present">
+      </button>
+      
+      <button type="button" id="bt_36" value="Absent" class="button_1"
+        onclick="handleClick('bt_36')">36
+        <input type="checkbox" name="st_36" value="present">
+      </button>
+      
+      <button type="button" id="bt_37" value="Absent" class="button_1"
+        onclick="handleClick('bt_37')">37
+        <input type="checkbox" name="st_37" value="present">
+      </button>
+      
+      <button type="button" id="bt_38" value="Absent" class="button_1"
+        onclick="handleClick('bt_38')">38
+        <input type="checkbox" name="st_38" value="present">
+      </button>
+      
+       <button type="button" id="bt_39" value="Absent" class="button_1"
+        onclick="handleClick('bt_39')">39
+        <input type="checkbox" name="st_39" value="present">
+      </button>
+      
+       <button type="button" id="bt_40" value="Absent" class="button_1"
+        onclick="handleClick('bt_40')">40
+        <input type="checkbox" name="st_40" value="present">
+      </button>
+      
+      <br>
+      <br>
+       <button type="button" id="bt_41" value="Absent" class="button_1"
+        onclick="handleClick('bt_41')">41
+        <input type="checkbox" name="st_41" value="present">
+      </button>
+      
+       <button type="button" id="bt_42" value="Absent" class="button_1"
+        onclick="handleClick('bt_42')">42
+        <input type="checkbox" name="st_42" value="present">
+      </button>
+      
+       <button type="button" id="bt_43" value="Absent" class="button_1"
+        onclick="handleClick('bt_43')">43
+        <input type="checkbox" name="st_43" value="present">
+      </button>
+      
+      <button type="button" id="bt_44" value="Absent" class="button_1"
+        onclick="handleClick('bt_44')">44
+        <input type="checkbox" name="st_44" value="present">
+      </button>
+      
+      <button type="button" id="bt_45" value="Absent" class="button_1"
+        onclick="handleClick('bt_45')">45
+        <input type="checkbox" name="st_45" value="present">
+      </button>
+      
+      <button type="button" id="bt_46" value="Absent" class="button_1"
+        onclick="handleClick('bt_46')">46
+        <input type="checkbox" name="st_46" value="present">
+      </button>
+      
+      <button type="button" id="bt_47" value="Absent" class="button_1"
+        onclick="handleClick('bt_47')">47
+        <input type="checkbox" name="st_47" value="present">
+      </button>
+      
+      <button type="button" id="bt_48" value="Absent" class="button_1"
+        onclick="handleClick('bt_48')">48
+        <input type="checkbox" name="st_48" value="present">
+      </button>
+      
+       <button type="button" id="bt_49" value="Absent" class="button_1"
+        onclick="handleClick('bt_49')">49
+        <input type="checkbox" name="st_49" value="present">
+      </button>
+      
+       <button type="button" id="bt_50" value="Absent" class="button_1"
+        onclick="handleClick('bt_50')">50
+        <input type="checkbox" name="st_50" value="present">
+      </button>
+      
+      <br>
+      <br>
+       <button type="button" id="bt_51" value="Absent" class="button_1"
+        onclick="handleClick('bt_51')">51
+        <input type="checkbox" name="st_51" value="present">
+      </button>
+      
+       <button type="button" id="bt_52" value="Absent" class="button_1"
+        onclick="handleClick('bt_52')">52
+        <input type="checkbox" name="st_52" value="present">
+      </button>
+      
+       <button type="button" id="bt_53" value="Absent" class="button_1"
+        onclick="handleClick('bt_53')">53
+        <input type="checkbox" name="st_53" value="present">
+      </button>
+      
+      <button type="button" id="bt_54" value="Absent" class="button_1"
+        onclick="handleClick('bt_54')">54
+        <input type="checkbox" name="st_54" value="present">
+      </button>
+      
+      <button type="button" id="bt_55" value="Absent" class="button_1"
+        onclick="handleClick('bt_55')">55
+        <input type="checkbox" name="st_55" value="present">
+      </button>
+      
+      <button type="button" id="bt_56" value="Absent" class="button_1"
+        onclick="handleClick('bt_56')">56
+        <input type="checkbox" name="st_56" value="present">
+      </button>
+      
+      <button type="button" id="bt_57" value="Absent" class="button_1"
+        onclick="handleClick('bt_57')">57
+        <input type="checkbox" name="st_57" value="present">
+      </button>
+      
+      <button type="button" id="bt_58" value="Absent" class="button_1"
+        onclick="handleClick('bt_58')">58
+        <input type="checkbox" name="st_58" value="present">
+      </button>
+      
+       <button type="button" id="bt_59" value="Absent" class="button_1"
+        onclick="handleClick('bt_59')">59
+        <input type="checkbox" name="st_59" value="present">
+      </button>
+      
+       <button type="button" id="bt_60" value="Absent" class="button_1"
+        onclick="handleClick('bt_60')">60
+        <input type="checkbox" name="st_60" value="present">
+      </button>
+            
+      <br>
+      <br>
+       <button type="button" id="bt_61" value="Absent" class="button_1"
+        onclick="handleClick('bt_61')">61
+        <input type="checkbox" name="st_61" value="present">
+      </button>
+      
+       <button type="button" id="bt_62" value="Absent" class="button_1"
+        onclick="handleClick('bt_62')">62
+        <input type="checkbox" name="st_62" value="present">
+      </button>
+      
+       <button type="button" id="bt_63" value="Absent" class="button_1"
+        onclick="handleClick('bt_63')">63
+        <input type="checkbox" name="st_63" value="present">
+      </button>
+      
+      <button type="button" id="bt_64" value="Absent" class="button_1"
+        onclick="handleClick('bt_64')">64
+        <input type="checkbox" name="st_64" value="present">
+      </button>
+      
+      <button type="button" id="bt_65" value="Absent" class="button_1"
+        onclick="handleClick('bt_65')">65
+        <input type="checkbox" name="st_65" value="present">
+      </button>
+      
+      <button type="button" id="bt_66" value="Absent" class="button_1"
+        onclick="handleClick('bt_66')">66
+        <input type="checkbox" name="st_66" value="present">
+      </button>
+      
+      <button type="button" id="bt_67" value="Absent" class="button_1"
+        onclick="handleClick('bt_67')">67
+        <input type="checkbox" name="st_67" value="present">
+      </button>
+      
+      <button type="button" id="bt_68" value="Absent" class="button_1"
+        onclick="handleClick('bt_68')">68
+        <input type="checkbox" name="st_68" value="present">
+      </button>
+      
+       <button type="button" id="bt_69" value="Absent" class="button_1"
+        onclick="handleClick('bt_69')">69
+        <input type="checkbox" name="st_69" value="present">
+      </button>
+      
+       <button type="button" id="bt_70" value="Absent" class="button_1"
+        onclick="handleClick('bt_70')">70
+        <input type="checkbox" name="st_70" value="present">
+      </button>
+      
+      <br>
+      <br>
+       <button type="button" id="bt_72" value="Absent" class="button_1"
+        onclick="handleClick('bt_71')">71
+        <input type="checkbox" name="st_71" value="present">
+      </button>
+      
+       <button type="button" id="bt_72" value="Absent" class="button_1"
+        onclick="handleClick('bt_72')">72
+        <input type="checkbox" name="st_72" value="present">
+      </button>
+      
+       <button type="button" id="bt_73" value="Absent" class="button_1"
+        onclick="handleClick('bt_73')">73
+        <input type="checkbox" name="st_73" value="present">
+      </button>
+      
+      <button type="button" id="bt_74" value="Absent" class="button_1"
+        onclick="handleClick('bt_74')">74
+        <input type="checkbox" name="st_74" value="present">
+      </button>
+      
+      <button type="button" id="bt_75" value="Absent" class="button_1"
+        onclick="handleClick('bt_75')">75
+        <input type="checkbox" name="st_75" value="present">
+      </button>
+      
+      
+      
+       
+      
+
+   
+      <hr>
+
+      <button type="submit" id="submit-btn" class="sub">SUBMIT </button>
+
+
+  
+  
+  
+  <div id="message"></div>
+
+
+
+    </form>
+  </div>
+
+
+ <script>
+    function handleClick(buttonId) {
+      var button = document.getElementById(buttonId);
+      if (button.value === "Absent") {
+        button.value = "Present";
+        button.style.backgroundColor = "green"; // set button color to green
+      } else {
+        // ask for confirmation before changing value to "Absent"
+        if (confirm("Are you sure you want to mark this as absent?")) {
+          button.value = "Absent";
+          button.style.backgroundColor = ""; // reset button color to default
+        }
+      }
+      console.log("Button value:", button.value);
+    }
+  </script> 
+  <footer>
+    Jayesh Web Deisgn, Copyright ; 2023</p>
+  </footer>
+
+
+
+
+
+</body>

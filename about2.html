@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+          body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.end{
+  padding:15px;
+  background:powderblue;
+  color:black;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:400px;
+  background:url('../img/showcase.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#ffffff;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#35424a
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#e8491d;
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+img{
+    width:25%;
+    border: 5px solid orange;
+    border-radius: 50%;
+   border-image:orange;
+  height:25%;
+}
+.pad{
+    padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+</style>
+    <meta charset="utf-8">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>JAYESH</title>
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="icon" href="img/favicon.png">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Student </span>Attendence systeam</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li class="current"><a href="about2.html">About</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="services.html">Statistics</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email..." required>
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">About Us</h1>
+          <p>
+           
+
+<h2>Welcome to our exceptional Student Attendance System!</h2>
+
+At our company, we pride ourselves on revolutionizing the way educational institutions track and manage student attendance. Our cutting-edge solution combines state-of-the-art technology, seamless integration, and an unwavering commitment to empowering academic institutions worldwide.
+
+We understand that accurate attendance records are the foundation of effective education. With our Student Attendance System, we provide an unparalleled platform that simplifies and streamlines the entire attendance management process. Our goal is to empower educators, administrators, and students alike, by harnessing the power of technology to enhance productivity, improve student engagement, and create a nurturing learning environment.
+
+
+          </p>
+          <p class="dark">
+At our Company, we believe that the Student Attendance System is not just a tool but a catalyst for positive change within educational institutions. By simplifying administrative tasks, fostering a culture of accountability, and promoting student engagement, our solution empowers institutions to elevate their educational experience to new heights.
+
+
+          </p>
+          
+         <h2> <p class="end">Join us in our mission to transform attendance management, enhance student success, and shape the future of education. Contact us today to explore how our Student Attendance System can revolutionize your institution!</p></h2>
+         
+        <h2>Project (website) builder</h2>
+        
+       <pre><img src="https://i.ibb.co/ZBhTk4s/IMG-20230524-181648-modified.png" alt="IMG-20230524-181648-modified" border="0">      <img src="https://i.ibb.co/wpytfBD/Picsart-23-05-24-22-50-05-752-modified.png" alt="Picsart-23-05-24-22-50-05-752-modified" border="0">     <img src="https://i.ibb.co/jTMsY9k/IMG-20230525-WA0003-modified.png" alt="IMG-20230525-WA0003-modified" border="0">
+       </pre>
+        <h1 style="font-family:Roman"><pre>Jayesh Jagtap    kasturi shirole     Ruchika kapdnis</pre></h1>
+        <br>
+       <pre> <img src="https://i.ibb.co/dQGWW1S/Picsart-23-05-25-13-23-56-171-modified.png" alt="Picsart-23-05-25-13-23-56-171-modified" border="0"></a>    <img src="https://i.ibb.co/PG12j1P/Screenshot-2023-05-25-10-18-48-96-6012fa4d4ddec268fc5c7112cbb265e7-modified.png" alt="Screenshot-2023-05-25-10-18-48-96-6012fa4d4ddec268fc5c7112cbb265e7-modified" border="0"></pre>
+        <h1><pre>Ujjwal Katare    Keshav panpatil</pre></h1></pre>
+      
+        
+  
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>Key Features and Benefits:</h3>
+      
+
+
+<p>
+<ul>
+<h4><li>Precision and Efficiency:</li></h4>
+ Our system employs advanced biometric identification technology, such as fingerprint or facial recognition, ensuring accurate identification of each student.
+
+<h4><li>Real-Time Monitoring:</li></h4>
+
+ Our system enables real-time monitoring of attendance, providing instant access to attendance data from any device with an internet connection. This empowers educators to make informed decisions promptly, identify patterns, and take proactive measures to support student success
+ 
+ <h4><li>Automated Notifications:</li></h4>
+
+ Gone are the days of manual attendance tracking and follow-up. Our system automatically sends notifications to parents or guardians if their child is absent, ensuring prompt communication and promoting a collaborative approach to student support.
+
+<h4><li>Analytics and Reports:</li></h4>
+
+ Our comprehensive reporting system provides valuable insights into attendance trends, enabling educators to identify patterns, monitor student performance, and develop targeted interventions when needed. These data-driven insights contribute to evidence-based decision-making and continuous improvement in the educational environment.
+
+<h4><li>Security and Privacy:</li></h4>
+
+Protecting student data is of utmost importance to us. Our system adheres to the highest standards of data security, employing robust encryption protocols and access controls. We prioritize student privacy and ensure compliance with relevant data protection regulations.
+</ul>
+</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <p>Jayesh Web Deisgn, Copyright ; 2023</p>
+    </footer>
+  </body>
+</html>
